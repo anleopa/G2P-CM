@@ -1,2 +1,2 @@
 # G2P-CM
-Conceptual model that represents the connection between genotipes and phenotypes
+From Genotype to Phenotype: A conceptual model to establish relevant associations between variants and phenotypes.
