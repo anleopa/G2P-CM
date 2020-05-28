@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Protein</title>
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/icon-font/icons.css">
+  <script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+</head>
+
+<body>
+  <div>
+
+    <!-- Name Title -->
+    <div style="padding-bottom: 25px;">
+      <h1 style="text-align:center;">
+      Protein</h1>
+      <hr>
+    </div>
+
+
+    <!-- Diagram -->
+
+    <section>
+      <div style="text-align: center; padding-top: 15px;">
+        <img style= "width: 50%;" src="../diagrams/protein.svg">
+      </div>
+    </section>
+
+    <!-- Description -->
+
+
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>A functional molecule derived from a mRNA and made up of a sequence of amino acids</p>
+        <p><b>References</b></p>
+        <ul>
+          <li><b>Sequence Ontology: </b>
+            <a href="http://www.sequenceontology.org/browser/current_release/term/SO:0000104">SO:0000104</a>
+          </li>
+          <li><b>NCI: </b>
+            <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein">
+              https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein</a>
+          </li>
+          <li><b>GHR: </b>
+            <a href=">https://ghr.nlm.nih.gov/primer/howgeneswork/makingprotein">
+              https://ghr.nlm.nih.gov/primer/howgeneswork/makingprotein</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- Attributes -->
+
+
+    <section>
+      <h3>Attributes</h3>
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td>id</td>
+          <td>String</td>
+          <td>
+            <p>Value that univocally identifies the protein in a database</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>name</td>
+          <td>String</td>
+          <td>
+            <p>Official name used as consensus to describe the protein</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>sequence</td>
+          <td>String</td>
+          <td>
+            <p>Sequence of amino acids that conforms the protein</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Classifier -->
+
+
+    <section class="element-list">
+      <h3>Specialized Elements</h3>
+      <ul class="nav nav-list">
+        <li><a href="mutant_protein.html"><span class='node-icon staruml-icon icon-UMLClass'></span>Mutant Protein</a></li>
+        <li><a href="enzyme.html"><span class='node-icon staruml-icon icon-UMLClass'></span>Enzyme</a></li>
+      </ul>
+    </section>
+
+    <!-- Relationships -->
+
+
+    <section class="element-list">
+      <h3>Relationships</h3>
+      <ul class="nav nav-list">
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Protein—Cellular Component)</li>
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Protein—Molecular Component)</li>
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Protein—Takes part)</li>
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Protein—Event)</li>
+      </ul>
+    </section>
+
+    <!-- Sources and Tools -->
+
+    <section style="padding-bottom: 20px;">
+      <h3>Sources and Tools</h3>
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://www.uniprot.org/">UniProt</a>: Comprehensive, high-quality and freely accessible resource of protein sequence and functional information.
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>

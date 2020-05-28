@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Chromosome Element</title>
+
+  <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/icon-font/icons.css">
+
+  <script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+</head>
+
+<body>
+  <div>
+
+    <!-- Name Title -->
+    <div style="padding-bottom: 25px;">
+      <h1 style="text-align:center;">
+        Chromosome Element</h1>
+        <hr>
+    </div>
+
+
+    <!-- Diagram -->
+
+    <section>
+      <div style="text-align: center; padding-top: 15px;">
+        <img style= "width: 50%;" src="../diagrams/chromosome_element.svg">
+      </div>
+    </section>
+
+    <!-- Description -->
+
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>A biological region of a chromosome, defined by its disposition to be involved in a biological process</p>
+        <p><b>References</b></p>
+        <ul>
+          <li><b>Sequence Ontology: </b>
+            <a href="http://www.sequenceontology.org/browser/current_release/term/SO:0000830">SO:0000830</a>;
+            <a href="http://www.sequenceontology.org/browser/current_release/term/SO:0001411">SO:0001411</a>;
+            <a href="http://www.sequenceontology.org/browser/current_release/term/SO:0000001">SO:0000001</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Attributes -->
+
+    <section>
+      <h3>Attributes</h3>
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td>id</td>
+          <td>String</td>
+          <td>
+            <p>Value that univocally identifies the chromosome element in a database</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>start</td>
+          <td>Long</td>
+          <td>
+            <p>Genome position where the chromosome element starts</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>end</td>
+          <td>Long</td>
+          <td>
+            <p>Genome position where the chromosome element ends</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>strand</td>
+          <td>String</td>
+          <td>
+            <p>The chain of the chromosome that indicates the direction in which the element is transcribed, commonly
+              named as forward (3’ to 5’) and complement (5’ to 3’).</p>
+          </td>
+        </tr>
+
+      </table>
+    </section>
+
+    <!-- Classifier -->
+
+    <section class="element-list">
+      <h3>Specialized Elements</h3>
+      <ul class="nav nav-list">
+
+        <li><a href='gene.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Gene</a></li>
+
+        <li><a href='exon.html'><span class='node-icon staruml-icon icon-UMLClass'></span>Exon</a></li>
+
+      </ul>
+    </section>
+
+    <!-- Relationships -->
+
+    <section class="element-list">
+      <h3>Relationships</h3>
+      <ul class="nav nav-list">
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Chromosome Element—Chromosome)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Chromosome Element—Molecular Effect)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Chromosome Element—Variant)</li>
+
+      </ul>
+    </section>
+
+    <!-- Sources and Tools -->
+
+    <section style="padding-bottom: 20px;">
+      <h3>Sources and Tools</h3>
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://www.ncbi.nlm.nih.gov/nuccore/">Nucleotide</a>: collection of sequences from several sources, including GenBank, RefSeq, TPA and PDB.
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tissue Expression</title>
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/icon-font/icons.css">
+  <script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+</head>
+
+<body>
+  <div>
+
+    <!-- Name Title -->
+    <div style="padding-bottom: 25px;">
+      <h1 style="text-align:center;">
+      Tissue Expression</h1>
+      <hr>
+    </div>
+
+
+    <!-- Diagram -->
+
+    <section>
+      <div style="text-align: center; padding-top: 15px;">
+        <img src="../diagrams/tissue_expression.svg">
+      </div>
+    </section>
+
+    <!-- Description -->
+
+    <section>
+      <h3>Description</h3>
+      <div>
+        <p>Tissue or organ where the genes are turned on to synthetize a functional gene product</p>
+        <p><b>References</b></p>
+        <ul>
+          <li><b>GTEX: </b><a href="https://commonfund.nih.gov/gtex">https://commonfund.nih.gov/gtex</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Attributes -->
+
+    <section>
+      <h3>Attributes</h3>
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td>tissue_name</td>
+          <td>String</td>
+          <td>
+            <p>Name of the tissue or organ where the gene is expressed</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>expression_value</td>
+          <td>String</td>
+          <td>
+            <p>Measure used to determine the level of expression of a gene</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Relationships -->
+
+    <section class="element-list">
+      <h3>Relationships</h3>
+      <ul class="nav nav-list">
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Tissue Expression—Gene)</li>
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Tissue Expression—Malfunction Consequence)
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sources and Tools -->
+
+    <section style="padding-bottom: 20px;">
+      <h3>Sources and Tools</h3>
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://www.gtexportal.org/home/">GTEx Portal</a>: Comprehensive public resource to study tissue-specific gene expression and regulation. 
+      </div>
+
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://www.proteinatlas.org/">Human Protein Atlas</a>: Swedish-based program initiated in 2003 with the aim to map all the human proteins in cells, tissues and organs using integration of various omics technologies, including antibody-based imaging, mass spectrometry-based proteomics, transcriptomics and systems biology.
+      </div>
+
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://www.ncbi.nlm.nih.gov/gene/">NCBI Gene</a>: Gene integrates information from a wide range of species. A record may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations, phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide.
+      </div>
+
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://www.uniprot.org/">UniProt</a>: Comprehensive, high-quality and freely accessible resource of protein sequence and functional information.
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Malfunction Consequence</title>
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/icon-font/icons.css">
+  <script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+</head>
+
+<body>
+  <div>
+
+    <!-- Name Title -->
+    <div style="padding-bottom: 25px;">
+      <h1 style="text-align:center;">
+      Malfunction Consequence</h1>
+      <hr>
+    </div>
+
+
+    <!-- Diagram -->
+
+    <section>
+      <div style="text-align: center; padding-top: 15px;">
+        <img src="../diagrams/malfunction_consequence.svg">
+      </div>
+    </section>
+
+    <!-- Description -->
+
+
+    <section>
+      <h3>Description</h3>
+      <div>
+
+        <p>Consequence derived from the fail of a pathway or cellular component to work or operate correctly in a
+          specific tissue or organ that derives in a set of observable characteristics</p>
+
+      </div>
+    </section>
+
+
+    <!-- Attributes -->
+
+
+    <section>
+      <h3>Attributes</h3>
+      <table class="table table-striped table-bordered">
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+
+        <tr>
+          <td>name</td>
+          <td>String</td>
+          <td>
+            <p>Name used to describe the consequence</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>description</td>
+          <td>String</td>
+          <td>
+            <p>Detailed description of the consequence</p>
+          </td>
+        </tr>
+
+      </table>
+    </section>
+
+
+    <!-- Relationships -->
+
+
+    <section class="element-list" style="padding-bottom: 20px;">
+      <h3>Relationships</h3>
+      <ul class="nav nav-list">
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>
+          (Malfunction Consequence—Observable Characteristic)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>
+          (Malfunction Consequence—Tissue Expression)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>
+          (Malfunction Consequence—Pathway)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>
+          (Malfunction Consequence—Cellular Component)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>
+          (Malfunction Consequence—Bibliographic Reference)</li>
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>
+          (Malfunction Consequence—Variant)</li>
+
+      </ul>
+    </section>
+
+  </div>
+</body>
+
+</html>

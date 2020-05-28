@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Phenotype</title>
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/icon-font/icons.css">
+  <script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+
+</head>
+
+<body>
+  <div>
+
+    <!-- Name Title -->
+    <div style="padding-bottom: 25px;">
+      <h1 style="text-align:center;">
+      Phenotype</h1>
+      <hr>
+    </div>
+
+
+    <!-- Diagram -->
+
+    <section>
+      <div style="text-align: center; padding-top: 15px;">
+        <img src="../diagrams/phenotype.svg">
+      </div>
+    </section>
+
+    <!-- Description -->
+
+
+    <section>
+      <h3>Description</h3>
+      <div>
+
+        <p>A set of one or more observable characteristics</p>
+        <p><b>References</b></p>
+        <ul>
+          <li><b>NCI: </b><a href="https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/phenotype">
+              https://www.cancer.gov/publications/dictionaries/genetics-dictionary/def/phenotype</a></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- Classifier -->
+
+
+    <section class="element-list">
+      <h3>Generalized Elements</h3>
+      <ul class="nav nav-list">
+
+        <li><a href="observable_characteristic.html"><span class='node-icon staruml-icon icon-UMLClass'>
+            </span>Observable Characteristic</a></li>
+
+      </ul>
+    </section>
+
+    <!-- Relationships -->
+
+    <section class="element-list">
+      <h3>Relationships</h3>
+      <ul class="nav nav-list">
+
+        <li><span class='node-icon staruml-icon icon-UMLAssociation'></span>(Phenotype—Observable Characteristic)
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Sources and Tools -->
+
+    <section style="padding-bottom: 20px;">
+      <h3>Sources and Tools</h3>
+      <div style = "padding-bottom: 5px;"><span class='node-icon staruml-icon icon-FCDatabase'></span>
+        <a href="https://hpo.jax.org/app/">HPO</a>: The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease.
+      </div>
+    </section>
+
+  </div>
+</body>
+
+</html>
